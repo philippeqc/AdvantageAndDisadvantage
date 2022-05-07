@@ -8,19 +8,32 @@ $$ \frac{n(n+1)(2n+1)}{6n^2} $$
 ## Pick best dice out of 2 (Advantage)
 $$ \frac{n(n+1)(4n-1)}{6n^2} $$
 
-## Result
+
+# 2 of 3 dices
+
+## Pick worst 2 dices out of 3 
+$$ \frac{19n^4+22n^3+5n^2+2n}{24n^3}  $$
+
+## Pick best 2 dices out of 3 
+
+*To be done!*
+
+# Result
+
+## Averages
 
 The averages for various dices are:
 
-| Dice | Worst 1 of 2 | 1 dice | Best 1 of 2 |
-|-----:|-------------:|-------:|----------:|
-| d4   | 1.8750       | 2.5    | 3.1250    |
-| d6   | 2.5280       | 3.5    | 4.4720    |
-| d8   | 3.1875       | 4.5    | 5.8125    |
-| d10  | 3.8500       | 5.5    | 7.1500    |
-| d12  | 4.5139       | 6.5    | 8.4861    |
-| d20  | 7.1750       | 10.5   | 13.825    |
+| Dice | Worst 1 of 2 | 1 dice | Best 1 of 2 | | Worst 2 of 3 | 2 dices | Best 2 of 3 |
+|-----:|-------------:|-------:|------------:|-|-------------:|--------:|------------:|
+| d4   | 1.8750       | 2.5    | 3.1250      | | 4.1406       | 5       | x           |
+| d6   | 2.5280       | 3.5    | 4.4720      | | 5.7037       | 7       | x           |
+| d8   | 3.1875       | 4.5    | 5.8125      | | 7.2773       | 9       | x           |
+| d10  | 3.8500       | 5.5    | 7.1500      | | 8.8550       | 11      | x           |
+| d12  | 4.5139       | 6.5    | 8.4861      | | 10.4346      | 13      | x           |
+| d20  | 7.1750       | 10.5   | 13.825      | | 16.7606      | 21      | x           |
 
+## Equivalent modifiers
 The condensed equivalent modifier versus the NTV:
 
 | NTV      | Best/Worst 1 of 2 |
@@ -37,27 +50,14 @@ The condensed equivalent modifier versus the NTV:
 |       11 | 5.00              |
 
 
-# 2 of 3 dices
 
-## Pick worst 2 dices out of 3 
-$$ \frac{19n^4+22n^3+5n^2+2n}{24n^3}  $$
 
-## Pick best 2 dices out of 3 
 
-*To be done!*
 
-## Result
 
-The averages for various dices are:
 
-| Dice | Worst 2 of 3 | 2 dices | Best 2 of 3 |
-|-----:|-------------:|--------:|------------:|
-| d4   | 4.1406       | 5       | x           |
-| d6   | 5.7037       | 7       | x           |
-| d8   | 7.2773       | 9       | x           |
-| d10  | 8.8550       | 11      | x           |
-| d12  | 10.4346      | 13      | x           |
-| d20  | 16.7606      | 21      | x           |
+
+
 
 
 
