@@ -282,7 +282,7 @@ We see:
 - Starting at NTV 11, the modifier values are a mirror copy of the values before NTV 11.
 
 
-Cheat sheet:
+## Cheat sheet:
 
 The equivalent modifier for NTV can be condensed to:
 
