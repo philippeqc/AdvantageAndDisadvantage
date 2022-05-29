@@ -138,6 +138,8 @@ $$n(2n+1)-n(n+1)$$
 $$n(2n+1-n-1)$$
 $$n^2$$
 
+So $(7 + 5 + 3 + 1)$ is $n^2$.
+
 
 The remaining part
 
@@ -238,7 +240,7 @@ The following where needed 4 times:
 * "1w2d4": $ \frac{n(n+1)(2n+1)}{6} $
 * $(7 + 5 + 3 + 1)$:  $n^2$ 
 
-and  $ \frac{n^2(n+1)^2}{4}$.
+and  $ \frac{n^2(n+1)^2}{4}$ once.
 where $n=4$
 
 Together we get:
