@@ -1,4 +1,11 @@
 
+Sometime, roll multiple dice and only pick some. What are the results?
+In DnD, can have advantage (or disadvantage) on a roll. Instead of rolling a single 20 sided dice (d20), 2 d20's are rolled. In the case of advantage, the best result is used. In the case of disadvantage, it is the worst result that is used.
+
+During character creation, many methods are available to generate characters abilities. The old school method was to roll 3 6 sided dices (3d6)
+
+What is to be expected from this? Lets dig in.
+
 # 1 of 2 dices
 
 
@@ -16,7 +23,7 @@ $$ \frac{19n^4+22n^3+5n^2+2n}{24n^3}  $$
 
 ## Pick best 2 dices out of 3 
 
-*To be done!*
+ $$ \frac{15n^2 + 30n + 3}{12n}$$
 
 # Result
 

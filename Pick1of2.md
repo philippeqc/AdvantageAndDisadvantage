@@ -1,4 +1,4 @@
-sdf
+
 # Worst 1 of 2 (Disadvantage)
 
 |   | 1 | 2 | 3 | 4 |
@@ -10,10 +10,10 @@ sdf
 
 Rolling 2d4 with disadvantage give:
 
-* 7 ones
-* 5 twos
-* 3 threes
-* 1 four
+* 7 one's
+* 5 two's
+* 3 three's
+* 1 four's
 
 To get the average of 1d4 with disadvantage, get the total for all the cases, 30 ($ 7*1 + 5*2 + 3*3 + 1*4$) and divide it by the number of cases, 16, so $\frac{30}{16}$ to get $1,875$.
 
@@ -21,33 +21,34 @@ To get the average of 1d4 with disadvantage, get the total for all the cases, 30
 
 But, we notice that it relates with the max value of the dice, here 4, actually twice that, so 8.
 
-* 8 - 1 ones
-* 8 - 3 twos
-* 8 - 5 threes
-* 8 - 7 four
+* $((2 \cdot 4) - 1)$ one's
+* $((2 \cdot 4) - 3)$ two's
+* $((2 \cdot 4) - 5)$ three's
+* $((2 \cdot 4) - 7)$ four's
 
 There seems to be a relation between the value of the result and its occurence
 
-* 8 - (2*one - 1) ones
-* 8 - (2*two - 1) twos
-* 8 - (2*three - 1) threes
-* 8 - (2*four - 1) four
+* $(2 \cdot 4) - (2*one - 1)$ one's
+* $(2 \cdot 4) - (2*two - 1)$ two's
+* $(2 \cdot 4) - (2*three - 1)$ three's
+* $(2 \cdot 4) - (2*four - 1)$ four's
 
 or
 
-* 8 + 1 - (2*one) ones
-* 8 + 1 - (2*two) twos
-* 8 + 1 - (2*three) threes
-* 8 + 1 - (2*four) four
+* $(2 \cdot 4 + 1) - (2*one)$ one's
+* $(2 \cdot 4 + 1) - (2*two)$ two's
+* $(2 \cdot 4 + 1) - (2*three)$ three's
+* $(2 \cdot 4 + 1) - (2*four)$ four's
 
 Let use n for the max value of the dice, here 4, and move the +1 with it as it doesn't depend on the value of the result.
 
-* (2*n + 1) - (2 * one) ones
-* (2*n + 1) - (2 * two) twos
-* (2*n + 1) - (2 * three) threes
-* (2*n + 1) - (2 * four) four
+* $(2n + 1) - (2*one)$ one's
+* $(2n + 1) - (2*two)$ two's
+* $(2n + 1) - (2*three)$ three's
+* $(2n + 1) - (2*four)$ four's
 
-For each item, the frequency of a result is linked with the result. The number of ones found in the table is dependent on the value one. The number of twos depends on the value two, and so on. So with our 1d4, we have the values 1,2,3 and 4. We will identify this as `i`. And as we want to add it all together, we will use the summation symbolised by $\sum$.
+
+For each item, the frequency of a result is linked with the result. The number of one's found in the table is dependent on the value one. The number of two's depends on the value two, and so on. So with our 1d4, we have the values 1,2,3 and 4. We will identify this as `i`. And as we want to add it all together, we will use the summation symbolised by $\sum$.
 
 $$ \sum_{i=1}^{n}(((2n+1) -(2*i))*i) $$
 
@@ -96,12 +97,19 @@ For our initial situation of rolling 1d4 with disadvantage, using the previous e
 
 Rolling 2d4 with sadvantage give:
 
-* 1 ones
-* 3 twos
-* 5 threes
-* 7 four
+* 1 one's
+* 3 two's
+* 5 three's
+* 7 four's
 
 $1*1 + 3*2 + 5*3 + 7*4 = 50$
+
+or
+* $(2*one) - 1$ one's
+* $(2*two) - 1$ two's
+* $(2*three) - 1$ three's
+* $(2*four) - 1$ four's
+
 
 $$(2*one-1)*one + (2*two-1)*2 + (2*three-1)*three + (2*four-1)*four$$
 
@@ -114,13 +122,11 @@ $$2\sum_{i=1}^{n}i^2 -\sum_{i=1}^{n}i$$
 
 becomes
 
-$$ 2 \frac{n(n+1)(2n+1)}{6} - \frac{n(n+1)}{2} $$
+$$ \frac{2n(n+1)(2n+1)}{6} - \frac{n(n+1)}{2} $$
 
 Isolating $\frac{n(n+1)}{2}$
 
-$$ \frac{n(n+1)}{2}( 2\frac{(2n+1)}{3} - 1) $$
-
-$$ \frac{n(n+1)}{2}( \frac{4n+2}{3} - 1) $$
+$$ \frac{n(n+1)}{2}( \frac{2(2n+1)}{3} - 1) $$
 $$ \frac{n(n+1)}{2}( \frac{4n+2}{3} - \frac{3}{3}) $$
 $$ \frac{n(n+1)(4n+2-3)}{6} $$
 $$ \frac{n(n+1)(4n-1)}{6} $$

@@ -1,6 +1,6 @@
+# Pick worst 2 dices out of 3
 
-
-# Disadvantage on 1d8 is
+## Disadvantage on 1d8 is
 | 1w2d8  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
 |   ---  |--- |--- |--- |--- |--- |--- |--- |--- |
 | 1      | 1  | 1  | 1  | 1  | 1  | 1  | 1  | 1  |
@@ -315,7 +315,7 @@ There seems to be a relation between the value of the result and its occurence
  $$
 
 
-Using $count*(high+low) / 2$ for a summation from low to high, with $low$ being always 1 and $count$ and $high$ being the same, we get:
+Using $count*(high+low) / 2$ for a summation from $low$ to $high$, with $low$ being always 1 and $count$ and $high$ being the same, we get:
 
  $$
 \begin{align}
