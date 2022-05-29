@@ -45,14 +45,9 @@ If we substract the values of "1b2d4" from "(1)2b3d4", we get
 
 which is the same as "1w2d4"
 
-??? vvv
-+ $50$ (base grid sum)
-+ $+ (4*4) * 1 $
+---
 
-For a total of $50 + (4*4) * 1 = 66$
-??? ^^^
-
-|(2)2w3d4| 1  | 2  | 3  | 4  |
+|(2)2b3d4| 1  | 2  | 3  | 4  |
 |   ---  |--- |--- |--- |--- |
 | 1      | 3  | 4  | 5  | 6  |
 | 2      | 4  | 4  | 5  | 6  |
@@ -71,28 +66,9 @@ If we substract the values of "1b2d4" from "(1)2b3d4", we get
 Which is the similar to "1w2d4", execept that the first row and column changed from 1 to 2. So it's "1w2d4" plus 7 one's.
 
 
-??? vvv
-+ $50$ (base grid sum)
-+ $+ (4*4) * 2$
-+ $- (1*[1])$
+---
 
-or
-
-- 8+7 of one's
-- 7+6 of two's
-- 6+5 of three's
-- 5+4 of four's
-- 4+3 of five's
-- 3+2 of six's
-- 2+1 of seven's
-- 1+0 of eight's
-- plus 64 of two's 
-- minus 1 of one's
-
-For a total of $204 + 64*2 - (1*(1)) = 331$
-??? ^^^
-
-|(3)2w3d4| 1  | 2  | 3  | 4  |
+|(3)2b3d4| 1  | 2  | 3  | 4  |
 |   ---  |--- |--- |--- |--- |
 | 1      | 4  | 5  | 6  | 7  |
 | 2      | 5  | 5  | 6  | 7  |
@@ -108,30 +84,9 @@ If we substract the values of "1b2d4" from "(1)2b3d4", we get
 | 3  | 3  | 3  | 3  | 3  |
 | 4  | 3  | 3  | 3  | 4  |
 
-??? vvv
-+ $204$ (base grid sum)
-+ $+ 64 * 3$
-+ $- (1*[2] + 2*[1])$
+---
 
-or
-
-- 8+7 of one's
-- 7+6 of two's
-- 6+5 of three's
-- 5+4 of four's
-- 4+3 of five's
-- 3+2 of six's
-- 2+1 of seven's
-- 1+0 of eight's
-- plus 64 of three's 
-- minus 1 of two's
-- minus 2 of one's
-
-
-For a total of $204 + 64*3 - (1*(2) + 2*(1)) = 392$
-??? ^^^
-
-|(4)2w3d4| 1  | 2  | 3  | 4  |
+|(4)2b3d4| 1  | 2  | 3  | 4  |
 |   ---  |--- |--- |--- |--- |
 | 1      | 5  | 6  | 7  | 8  |
 | 2      | 6  | 6  | 7  | 8  |
@@ -139,29 +94,9 @@ For a total of $204 + 64*3 - (1*(2) + 2*(1)) = 392$
 | 4      | 8  | 8  | 8  | 8  |
 
 
-??? vvv
-+ $204$ (base grid sum)
-+ $+ 64 * 4$
-+ $- (1*[3] + 2*[2] + 3*[1])$
-
-or
-- 8+7 of one's
-- 7+6 of two's
-- 6+5 of three's
-- 5+4 of four's
-- 4+3 of five's
-- 3+2 of six's
-- 2+1 of seven's
-- 1+0 of eight's
-- plus 64 of four's 
-- minus 1 of three's
-- minus 2 of two's
-- minus 3 of one's
-
-For a total of $204 + 64*4 - (1*(3) + 2*(2) + 3*(1)) = 450$
-??? ^^^
-
 ---
+
+**Some steps computed in a notebook should go here**
 
 what remains after removing "1b2d4" and "1w2d4" from each 4 by 4 is 
 
