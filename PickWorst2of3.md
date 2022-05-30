@@ -337,6 +337,7 @@ Using $n$ for the number of sides and $j$ for the current value, each line becom
  $$
 
 regrouping the terms and simplifying:
+
  $$
 (n^2 + n(2n + 1 - 2j) - \frac{(n-j) \cdot (n-j+1)}{2})  j \\
 (n^2 + 2n^2 + n - 2nj - \frac{(n-j) \cdot (n-j+1)}{2})  j \\
