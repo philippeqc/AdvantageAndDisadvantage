@@ -24,7 +24,7 @@ sum of all values is
 
 
 
-$$(8+7)*1 + (7+6)*2 + (6+5)*3 + (5+4)*4 + (4+3)*5 + (3+2)*6 + (2+1)*7 + (1+0)*8 = 204 $$
+$$(8+7) \cdot 1 + (7+6) \cdot 2 + (6+5) \cdot 3 + (5+4) \cdot 4 + (4+3) \cdot 5 + (3+2) \cdot 6 + (2+1) \cdot 7 + (1+0) \cdot 8 = 204 $$
 
 Which gives 204 
 
@@ -40,7 +40,7 @@ Which gives 204
 | 8      | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  |
 
 + $204$ (base grid sum)
-+ $+ 64 * 1 $
++ $+ 64  \cdot  1 $
 
 or
 
@@ -54,7 +54,7 @@ or
 - 1+0 of eight's
 - plus 64 of one's 
 
-For a total of $204 + 64*1 = 268$
+For a total of $204 + 64 \cdot 1 = 268$
 
 |(2)2w3d8| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
 |   ---  |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -68,8 +68,8 @@ For a total of $204 + 64*1 = 268$
 | 8      | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |
 
 + $204$ (base grid sum)
-+ $+ 64 * 2$
-+ $- (1*[1])$
++ $+ 64  \cdot  2$
++ $- (1 \cdot [1])$
 
 or
 
@@ -84,7 +84,7 @@ or
 - plus 64 of two's 
 - minus 1 of one's
 
-For a total of $204 + 64*2 - (1*(1)) = 331$
+For a total of $204 + 64 \cdot 2 - (1 \cdot (1)) = 331$
 
 |(3)2w3d8| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
 |   ---  |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -98,8 +98,8 @@ For a total of $204 + 64*2 - (1*(1)) = 331$
 | 8      | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 |
 
 + $204$ (base grid sum)
-+ $+ 64 * 3$
-+ $- (1*[2] + 2*[1])$
++ $+ 64  \cdot  3$
++ $- (1 \cdot [2] + 2 \cdot [1])$
 
 or
 
@@ -116,7 +116,7 @@ or
 - minus 2 of one's
 
 
-For a total of $204 + 64*3 - (1*(2) + 2*(1)) = 392$
+For a total of $204 + 64 \cdot 3 - (1 \cdot (2) + 2 \cdot (1)) = 392$
 
 |(4)2w3d8| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
 |   ---  |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -130,8 +130,8 @@ For a total of $204 + 64*3 - (1*(2) + 2*(1)) = 392$
 | 8      | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 |
 
 + $204$ (base grid sum)
-+ $+ 64 * 4$
-+ $- (1*[3] + 2*[2] + 3*[1])$
++ $+ 64  \cdot  4$
++ $- (1 \cdot [3] + 2 \cdot [2] + 3 \cdot [1])$
 
 or
 - 8+7 of one's
@@ -147,7 +147,7 @@ or
 - minus 2 of two's
 - minus 3 of one's
 
-For a total of $204 + 64*4 - (1*(3) + 2*(2) + 3*(1)) = 450$
+For a total of $204 + 64 \cdot 4 - (1 \cdot (3) + 2 \cdot (2) + 3 \cdot (1)) = 450$
 
 |(5)2w3d8| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
 |   ---  |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -161,8 +161,8 @@ For a total of $204 + 64*4 - (1*(3) + 2*(2) + 3*(1)) = 450$
 | 8      | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 |
 
 + $204$ (base grid sum)
-+ $+ 64 * 5$
-+ $- (1*[4] + 2*[3] + 3*[2] + 4*[1]))$
++ $+ 64  \cdot  5$
++ $- (1 \cdot [4] + 2 \cdot [3] + 3 \cdot [2] + 4 \cdot [1]))$
 
 or
 - 8+7 of one's
@@ -179,7 +179,7 @@ or
 - minus 3 of two's
 - minus 4 of one's
 
-For a total of $204 + 64*5 - (1*(4) + 2*(3) + 3*(2) + 4*(1)) = 504$
+For a total of $204 + 64 \cdot 5 - (1 \cdot (4) + 2 \cdot (3) + 3 \cdot (2) + 4 \cdot (1)) = 504$
 
 |(6)2w3d8| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
 |   ---  |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -193,8 +193,8 @@ For a total of $204 + 64*5 - (1*(4) + 2*(3) + 3*(2) + 4*(1)) = 504$
 | 8      | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 |
 
 + $204$ (base grid sum)
-+ $+ 64 * 6$
-+ $- (1*[5] + 2*[4] + 3*[3] + 4*[2] + 5*[1])$
++ $+ 64  \cdot  6$
++ $- (1 \cdot [5] + 2 \cdot [4] + 3 \cdot [3] + 4 \cdot [2] + 5 \cdot [1])$
 
 or
 - 8+7 of one's
@@ -212,7 +212,7 @@ or
 - minus 4 of two's
 - minus 5 of one's
 
-For a total of $204 + 64*6 - (1*(5) + 2*(4) + 3*(3) + 4*(2) + 5*(1)) = 553$
+For a total of $204 + 64 \cdot 6 - (1 \cdot (5) + 2 \cdot (4) + 3 \cdot (3) + 4 \cdot (2) + 5 \cdot (1)) = 553$
 
 |(7)2w3d8| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
 |   ---  |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -226,8 +226,8 @@ For a total of $204 + 64*6 - (1*(5) + 2*(4) + 3*(3) + 4*(2) + 5*(1)) = 553$
 | 8      | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 |
 
 + $204$ (base grid sum)
-+ $+ 64 * 7$
-+ $- (1*[6] + 2*[5] + 3*[4] + 4*[3] + 5*[2] + 6*[1])$
++ $+ 64  \cdot  7$
++ $- (1 \cdot [6] + 2 \cdot [5] + 3 \cdot [4] + 4 \cdot [3] + 5 \cdot [2] + 6 \cdot [1])$
 
 or
 - 8+7 of one's
@@ -246,7 +246,7 @@ or
 - minus 5 of two's
 - minus 6 of one's
 
-For a total of $204 + 64*7 - (1*(6) + 2*(5) + 3*(4) + 4*(3) + 5*(2) + 6*(1)) = 596$
+For a total of $204 + 64 \cdot 7 - (1 \cdot (6) + 2 \cdot (5) + 3 \cdot (4) + 4 \cdot (3) + 5 \cdot (2) + 6 \cdot (1)) = 596$
 
 |(8)2w3d8| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
 |   ---  |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -260,8 +260,8 @@ For a total of $204 + 64*7 - (1*(6) + 2*(5) + 3*(4) + 4*(3) + 5*(2) + 6*(1)) = 5
 | 8      | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
 
 + $204$ (base grid sum)
-+ $+ 64 * 8$
-+ $- (1*[7] + 2*[6] + 3*[5] + 4*[4] + 5*[3] + 6*[2] + 7*[1])$
++ $+ 64  \cdot  8$
++ $- (1 \cdot [7] + 2 \cdot [6] + 3 \cdot [5] + 4 \cdot [4] + 5 \cdot [3] + 6 \cdot [2] + 7 \cdot [1])$
 
 or
 - 8+7 of one's
@@ -281,7 +281,7 @@ or
 - minus 6 of two's
 - minus 7 of one's
 
-For a total of $204 + 64*8 - (1*(7) + 2*(6) + 3*(5) + 4*(4) + 5*(3) + 6*(2) + 7*(1)) = 632$
+For a total of $204 + 64 \cdot 8 - (1 \cdot (7) + 2 \cdot (6) + 3 \cdot (5) + 4 \cdot (4) + 5 \cdot (3) + 6 \cdot (2) + 7 \cdot (1)) = 632$
 
 Grand total  of  $268 + 331 + 392 + 450 + 504 + 553 + 596 + 632 = 3726$
 
@@ -289,44 +289,44 @@ Grand total  of  $268 + 331 + 392 + 450 + 504 + 553 + 596 + 632 = 3726$
 Summing it all toghether gives us the following:
 
 
-- 64 + 8*(8+7) - (1+2+3+4+5+6+7) of one's
-- 64 + 8*(7+6) - (1+2+3+4+5+6) of two's
-- 64 + 8*(6+5) - (1+2+3+4+5) of three's
-- 64 + 8*(5+4) - (1+2+3+4) of four's
-- 64 + 8*(4+3) - (1+2+3) of five's
-- 64 + 8*(3+2) - (1+2) of six's
-- 64 + 8*(2+1) - (1) of seven's
-- 64 + 8*(1+0) - (0) of eight's
+- $64 + 8 \cdot (8+7) - (1+2+3+4+5+6+7)$ of one's
+- $64 + 8 \cdot (7+6) - (1+2+3+4+5+6)$ of two's
+- $64 + 8 \cdot (6+5) - (1+2+3+4+5)$ of three's
+- $64 + 8 \cdot (5+4) - (1+2+3+4)$ of four's
+- $64 + 8 \cdot (4+3) - (1+2+3)$ of five's
+- $64 + 8 \cdot (3+2) - (1+2)$ of six's
+- $64 + 8 \cdot (2+1) - (1)$ of seven's
+- $64 + 8 \cdot (1+0) - (0)$ of eight's
 
 There seems to be a relation between the value of the result and its occurence
 
 
  $$
 \begin{align}
-(64 &+ 8*((2*8 + 1) &- (2 * one))   &- (1+2+3+4+5+6+7)) one's \\
-(64 &+ 8*((2*8 + 1) &- (2 * two))   &- (1+2+3+4+5+6)) two's \\
-(64 &+ 8*((2*8 + 1) &- (2 * three)) &- (1+2+3+4+5)) three's \\
-(64 &+ 8*((2*8 + 1) &- (2 * four))  &- (1+2+3+4)) four's \\
-(64 &+ 8*((2*8 + 1) &- (2 * five))  &- (1+2+3)) five's \\
-(64 &+ 8*((2*8 + 1) &- (2 * six))   &- (1+2)) six's \\
-(64 &+ 8*((2*8 + 1) &- (2 * seven)) &- (1)) seven's \\
-(64 &+ 8*((2*8 + 1) &- (2 * eight)) &- (0)) eight's
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  one))   &- (1+2+3+4+5+6+7)) one's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  two))   &- (1+2+3+4+5+6)) two's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  three)) &- (1+2+3+4+5)) three's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  four))  &- (1+2+3+4)) four's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  five))  &- (1+2+3)) five's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  six))   &- (1+2)) six's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  seven)) &- (1)) seven's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  eight)) &- (0)) eight's
 \end{align}
  $$
 
 
-Using $count*(high+low) / 2$ for a summation from $low$ to $high$, with $low$ being always 1 and $count$ and $high$ being the same, we get:
+Using $count \cdot (high+low) / 2$ for a summation from $low$ to $high$, with $low$ being always 1 and $count$ and $high$ being the same, we get:
 
  $$
 \begin{align}
-(64 &+ 8*((2*8 + 1) &- (2 * one))   &- ((8-one)*(8-one+1) / 2)) one's \\
-(64 &+ 8*((2*8 + 1) &- (2 * two))   &- ((8-two)*(8-two+1) / 2)) two's \\
-(64 &+ 8*((2*8 + 1) &- (2 * three)) &- ((8-three)*(8-three+1) / 2)) three's \\
-(64 &+ 8*((2*8 + 1) &- (2 * four))  &- ((8-four)*(8-four+1) / 2)) four's \\
-(64 &+ 8*((2*8 + 1) &- (2 * five))  &- ((8-five)*(8-five+1) / 2)) five's \\
-(64 &+ 8*((2*8 + 1) &- (2 * six))   &- ((8-six)*(8-six+1) / 2)) six's \\
-(64 &+ 8*((2*8 + 1) &- (2 * seven)) &- ((8-seven)*(8-seven+1) / 2)) seven's \\
-(64 &+ 8*((2*8 + 1) &- (2 * eight)) &- ((8-eight)*(8-eight+1) / 2)) eight's
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  one))   &- ((8-one) \cdot (8-one+1) / 2)) one's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  two))   &- ((8-two) \cdot (8-two+1) / 2)) two's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  three)) &- ((8-three) \cdot (8-three+1) / 2)) three's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  four))  &- ((8-four) \cdot (8-four+1) / 2)) four's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  five))  &- ((8-five) \cdot (8-five+1) / 2)) five's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  six))   &- ((8-six) \cdot (8-six+1) / 2)) six's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  seven)) &- ((8-seven) \cdot (8-seven+1) / 2)) seven's \\
+(64 &+ 8 \cdot ((2 \cdot 8 + 1) &- (2  \cdot  eight)) &- ((8-eight) \cdot (8-eight+1) / 2)) eight's
 \end{align}
  $$
 
@@ -338,8 +338,8 @@ Using $n$ for the number of sides and $j$ for the current value, each line becom
 
 regrouping the terms and simplifying:
  $$
-(n^2 + n(2n + 1 - 2j) - \frac{(n-j)*(n-j+1)}{2})  j \\
-(n^2 + 2n^2 + n - 2nj - \frac{(n-j)*(n-j+1)}{2})  j \\
+(n^2 + n(2n + 1 - 2j) - \frac{(n-j) \cdot (n-j+1)}{2})  j \\
+(n^2 + 2n^2 + n - 2nj - \frac{(n-j) \cdot (n-j+1)}{2})  j \\
 (3n^2 + n - 2nj - \frac{n^2-2nj+n+j^2-j}{2})  j \\
 \frac{6n^2 + 2n - 4nj -n^2+2nj-n-j^2+j}{2}  j \\
 \frac{5n^2 + n + (1 - 2n)j -j^2 }{2}  j \\

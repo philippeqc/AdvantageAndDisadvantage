@@ -15,13 +15,13 @@ sum of all values is
 - 4+3 of four's
 
 or again
-* $(2*one) - 1$ one's
-* $(2*two) - 1$ two's
-* $(2*three) - 1$ three's
-* $(2*four) - 1$ four's
+* $(2 \cdot one) - 1$ one's
+* $(2 \cdot two) - 1$ two's
+* $(2 \cdot three) - 1$ three's
+* $(2 \cdot four) - 1$ four's
 
 
-$$((1+0)*1 + (2+1)*2 + (3+2)*3 + (4+3)*4 = 50 $$
+$$((1+0) \cdot 1 + (2+1) \cdot 2 + (3+2) \cdot 3 + (4+3) \cdot 4 = 50 $$
 
 Which gives 50
 
@@ -122,16 +122,16 @@ or
 
  $$
 \begin{align}
- (7 + 5 + 3 + 1)  &- (& &  &(2*one - 1)) &one's \\
- (7 + 5 + 3 + 1)  &- (& &(2*two - 1) + &(2*one - 1)) &two's \\
- (7 + 5 + 3 + 1)  &- (&(2*three - 1) + &(2*two - 1) + &(2*one - 1)) &three's \\
- (7 + 5 + 3 + 1)  &- ((2*four - 1) + &(2*three - 1) + &(2*two - 1) + &(2*one - 1)) &four's \\
+ (7 + 5 + 3 + 1)  &- (& &  &(2 \cdot one - 1)) &one's \\
+ (7 + 5 + 3 + 1)  &- (& &(2 \cdot two - 1) + &(2 \cdot one - 1)) &two's \\
+ (7 + 5 + 3 + 1)  &- (&(2 \cdot three - 1) + &(2 \cdot two - 1) + &(2 \cdot  \cdot one - 1)) &three's \\
+ (7 + 5 + 3 + 1)  &- ((2 \cdot four - 1) + &(2 \cdot three - 1) + &(2 \cdot two - 1) + &(2 \cdot one - 1)) &four's \\
 \end{align}
  $$
 
-The $(7 + 5 + 3 + 1)$ sub part  is $\sum_{i=1}^{n}(2n+1-(2*i))$ where $n=4$. It can be expressed as
-$$\sum_{i=1}^{n}(2n+1-(2*i))$$
-$$\sum_{i=1}^{n}(2n+1)-\sum_{i=1}^{n}(2*i)$$
+The $(7 + 5 + 3 + 1)$ sub part  is $\sum_{i=1}^{n}(2n+1-(2i))$ where $n=4$. It can be expressed as
+$$\sum_{i=1}^{n}(2n+1-(2i))$$
+$$\sum_{i=1}^{n}(2n+1)-\sum_{i=1}^{n}(2i)$$
 $$n(2n+1)-2\sum_{i=1}^{n}(i)$$
 $$n(2n+1)-2\frac{n(n+1)}{2}$$
 $$n(2n+1)-n(n+1)$$
@@ -145,10 +145,10 @@ The remaining part
 
 $$
 \begin{align}
- &(               &                &              &(2*one - 1)) &one's \\
- &(               &                &(2*two - 1) + &(2*one - 1)) &two's \\
- &(               &(2*three - 1) + &(2*two - 1) + &(2*one - 1)) &three's \\
- &((2*four - 1) + &(2*three - 1) + &(2*two - 1) + &(2*one - 1)) &four's \\
+ &(                   &  &                    &  &                  &  &(2 \cdot one - 1)) &one's \\
+ &(                   &  &                    &  &(2 \cdot two - 1) &+ &(2 \cdot one - 1)) &two's \\
+ &(                   &  &(2 \cdot three - 1) &+ &(2 \cdot two - 1) &+ &(2 \cdot one - 1)) &three's \\
+ &((2 \cdot four - 1) &+ &(2 \cdot three - 1) &+ &(2 \cdot two - 1) &+ &(2 \cdot one - 1)) &four's \\
 \end{align}
 $$
 
@@ -156,10 +156,10 @@ rewrittend as
 
 $$
 \begin{align}
- &(              &              &              &(2 \cdot 1) - 1) & \cdot 1 + \\
- &(              &              &(2 \cdot 2) + &(2 \cdot 1) - 2) & \cdot 2 + \\
- &(              &(2 \cdot 3) + &(2 \cdot 2) + &(2 \cdot 1) - 3) & \cdot 3 + \\
- &((2 \cdot 4) + &(2 \cdot 3) + &(2 \cdot 2) + &(2 \cdot 1) - 4) & \cdot 4   \\
+ &(            &  &            &  &            &  &(2 \cdot 1) - 1) \cdot 1 &+ \\
+ &(            &  &            &  &(2 \cdot 2) &+ &(2 \cdot 1) - 2) \cdot 2 &+ \\
+ &(            &  &(2 \cdot 3) &+ &(2 \cdot 2) &+ &(2 \cdot 1) - 3) \cdot 3 &+ \\
+ &((2 \cdot 4) &+ &(2 \cdot 3) &+ &(2 \cdot 2) &+ &(2 \cdot 1) - 4) \cdot 4 &  \\
 \end{align}
 $$
 
@@ -174,7 +174,7 @@ $$
 \end{align}
 $$
 
-Using $count*(high+low) / 2$ for a summation from $low$ to $high$, with $low$ being always 1 and $count$ and $high$ being the same, we get:
+Using $count \cdot (high+low) / 2$ for a summation from $low$ to $high$, with $low$ being always 1 and $count$ and $high$ being the same, we get:
 
 $$
 \begin{align}
@@ -230,7 +230,7 @@ $$
 $$
 
 we are left with a summation of cubes, which is 
- $$\sum_{i=1}^{n}(i^3) = \frac{n^2(n+1)^2}{4}$$.
+$$\sum_{i=1}^{n}(i^3) = \frac{n^2(n+1)^2}{4}$$
 
 Regrouping all the parts.
 
@@ -257,100 +257,5 @@ Together we get:
 
 Is the total, for the average, divide by $n^3$ to get
  $$ \frac{15n^2 + 30n + 3}{12n}$$
-
-
----
----
----
-
-
-
-
-
-
-Grand total  of  $268 + 331 + 392 + 450 + 504 + 553 + 596 + 632 = 3726$
-
----
-Regrouping by value (all the one's together, etc) and summing it all toghether gives us the following:
-
-
-- 64 + 8*(8+7) - (1+2+3+4+5+6+7) of one's
-- 64 + 8*(7+6) - (1+2+3+4+5+6) of two's
-- 64 + 8*(6+5) - (1+2+3+4+5) of three's
-- 64 + 8*(5+4) - (1+2+3+4) of four's
-- 64 + 8*(4+3) - (1+2+3) of five's
-- 64 + 8*(3+2) - (1+2) of six's
-- 64 + 8*(2+1) - (1) of seven's
-- 64 + 8*(1+0) - (0) of eight's
-
-There seems to be a relation between the value of the result and its occurence
-
-
- $$
-\begin{align}
-(64 &+ 8*((2*8 + 1) &- (2 * one))   &- (1+2+3+4+5+6+7)) one's \\
-(64 &+ 8*((2*8 + 1) &- (2 * two))   &- (1+2+3+4+5+6)) two's \\
-(64 &+ 8*((2*8 + 1) &- (2 * three)) &- (1+2+3+4+5)) three's \\
-(64 &+ 8*((2*8 + 1) &- (2 * four))  &- (1+2+3+4)) four's \\
-(64 &+ 8*((2*8 + 1) &- (2 * five))  &- (1+2+3)) five's \\
-(64 &+ 8*((2*8 + 1) &- (2 * six))   &- (1+2)) six's \\
-(64 &+ 8*((2*8 + 1) &- (2 * seven)) &- (1)) seven's \\
-(64 &+ 8*((2*8 + 1) &- (2 * eight)) &- (0)) eight's
-\end{align}
- $$
-
-
-Using $count*(high+low) / 2$ for a summation from low to high, with $low$ being always 1 and $count$ and $high$ being the same, we get:
-
- $$
-\begin{align}
-(64 &+ 8*((2*8 + 1) &- (2 * one))   &- ((8-one)*(8-one+1) / 2)) one's \\
-(64 &+ 8*((2*8 + 1) &- (2 * two))   &- ((8-two)*(8-two+1) / 2)) two's \\
-(64 &+ 8*((2*8 + 1) &- (2 * three)) &- ((8-three)*(8-three+1) / 2)) three's \\
-(64 &+ 8*((2*8 + 1) &- (2 * four))  &- ((8-four)*(8-four+1) / 2)) four's \\
-(64 &+ 8*((2*8 + 1) &- (2 * five))  &- ((8-five)*(8-five+1) / 2)) five's \\
-(64 &+ 8*((2*8 + 1) &- (2 * six))   &- ((8-six)*(8-six+1) / 2)) six's \\
-(64 &+ 8*((2*8 + 1) &- (2 * seven)) &- ((8-seven)*(8-seven+1) / 2)) seven's \\
-(64 &+ 8*((2*8 + 1) &- (2 * eight)) &- ((8-eight)*(8-eight+1) / 2)) eight's
-\end{align}
- $$
-
-Using $n$ for the number of sides and $j$ for the current value, each line becomes:
-
- $$
-(n^2 + n((2n + 1) - (2j)) - \frac{(n-j)(n-j+1)}{2})  j
- $$
-
-regrouping the terms and simplifying:
- $$
-(n^2 + n(2n + 1 - 2j) - \frac{(n-j)*(n-j+1)}{2})  j \\
-(n^2 + 2n^2 + n - 2nj - \frac{(n-j)*(n-j+1)}{2})  j \\
-(3n^2 + n - 2nj - \frac{n^2-2nj+n+j^2-j}{2})  j \\
-\frac{6n^2 + 2n - 4nj -n^2+2nj-n-j^2+j}{2}  j \\
-\frac{5n^2 + n + (1 - 2n)j -j^2 }{2}  j \\
-\frac{5n^2 + n}{2}j + \frac{(1 - 2n)}{2}j^2 -\frac{1}{2}j^3 \\
-$$
-
-
-So, for all the values of $j$ we have:
-
-$$
-\sum_{j=1}^{n}(\frac{5n^2 + n}{2}j + \frac{(1 - 2n)}{2}j^2 -\frac{1}{2}j^3 ) \\
-\frac{5n^2 +n}{2}\sum_{j=1}^{n}j + \frac{(1 - 2n)}{2}\sum_{j=1}^{n}j^2 - \frac{1}{2}\sum_{j=1}^{n}j^3 \\
-\frac{5n^2 +n}{2}\frac{n(n+1)}{2} + \frac{(1 - 2n)}{2}\frac{n(n+1)(2n+1)}{6} - \frac{1}{2}\frac{n^2(n+1)^2}{4} \\
-\frac{(5n^3 +n^2)(n+1)}{4} + \frac{(1 - 2n)n(n+1)(2n+1)}{12} - \frac{n^2(n+1)^2}{8} \\
-\frac{19n^4+22n^3+5n^2+2n}{24}
-$$
-
-
-
-gives 3726
-
-And the average value of the sum is:
-$$
-\frac{19n^4+22n^3+5n^2+2n}{24n^3}
-$$
-
-Average: $3726/8^3 = 7.27734375$
 
 

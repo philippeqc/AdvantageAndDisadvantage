@@ -15,7 +15,7 @@ Rolling 2d4 with disadvantage give:
 * 3 three's
 * 1 four's
 
-To get the average of 1d4 with disadvantage, get the total for all the cases, 30 ($ 7*1 + 5*2 + 3*3 + 1*4$) and divide it by the number of cases, 16, so $\frac{30}{16}$ to get $1,875$.
+To get the average of 1d4 with disadvantage, get the total for all the cases, 30 ($ 7 \cdot 1 + 5 \cdot 2 + 3 \cdot 3 + 1 \cdot 4$) and divide it by the number of cases, 16, so $\frac{30}{16}$ to get $1,875$.
 
 
 
@@ -28,32 +28,33 @@ But, we notice that it relates with the max value of the dice, here 4, actually 
 
 There seems to be a relation between the value of the result and its occurence
 
-* $(2 \cdot 4) - (2*one - 1)$ one's
-* $(2 \cdot 4) - (2*two - 1)$ two's
-* $(2 \cdot 4) - (2*three - 1)$ three's
-* $(2 \cdot 4) - (2*four - 1)$ four's
+* $(2 \cdot 4) - (2 \cdot one - 1)$ one's
+* $(2 \cdot 4) - (2 \cdot two - 1)$ two's
+* $(2 \cdot 4) - (2 \cdot three - 1)$ three's
+* $(2 \cdot 4) - (2 \cdot four - 1)$ four's
 
 or
 
-* $(2 \cdot 4 + 1) - (2*one)$ one's
-* $(2 \cdot 4 + 1) - (2*two)$ two's
-* $(2 \cdot 4 + 1) - (2*three)$ three's
-* $(2 \cdot 4 + 1) - (2*four)$ four's
+* $(2 \cdot 4 + 1) - (2 \cdot one)$ one's
+* $(2 \cdot 4 + 1) - (2 \cdot two)$ two's
+* $(2 \cdot 4 + 1) - (2 \cdot three)$ three's
+* $(2 \cdot 4 + 1) - (2 \cdot four)$ four's
 
 Let use n for the max value of the dice, here 4, and move the +1 with it as it doesn't depend on the value of the result.
 
-* $(2n + 1) - (2*one)$ one's
-* $(2n + 1) - (2*two)$ two's
-* $(2n + 1) - (2*three)$ three's
-* $(2n + 1) - (2*four)$ four's
+* $(2n + 1) - (2 \cdot one)$ one's
+* $(2n + 1) - (2 \cdot two)$ two's
+* $(2n + 1) - (2 \cdot three)$ three's
+* $(2n + 1) - (2 \cdot four)$ four's
 
 
 For each item, the frequency of a result is linked with the result. The number of one's found in the table is dependent on the value one. The number of two's depends on the value two, and so on. So with our 1d4, we have the values 1,2,3 and 4. We will identify this as `i`. And as we want to add it all together, we will use the summation symbolised by $\sum$.
 
-$$ \sum_{i=1}^{n}(((2n+1) -(2*i))*i) $$
+$$ \sum_{i=1}^{n}(((2n+1) -(2i)) i) $$
 
-Applying $i$ to each sub parts
-$$ \sum_{i=1}^{n}((2n+1)*i - 2*i^2) $$
+Applying $i$ to each sub parts we get
+
+$$ \sum_{i=1}^{n}((2n+1)i - 2i^2) $$
 
 Lets break apart the two parts, and move the constant part out of the summation.
 
@@ -102,16 +103,16 @@ Rolling 2d4 with sadvantage give:
 * 5 three's
 * 7 four's
 
-$1*1 + 3*2 + 5*3 + 7*4 = 50$
+$1 \cdot 1 + 3 \cdot 2 + 5 \cdot 3 + 7 \cdot 4 = 50$
 
 or
-* $(2*one) - 1$ one's
-* $(2*two) - 1$ two's
-* $(2*three) - 1$ three's
-* $(2*four) - 1$ four's
+* $(2 \cdot one) - 1$ one's
+* $(2 \cdot two) - 1$ two's
+* $(2 \cdot three) - 1$ three's
+* $(2 \cdot four) - 1$ four's
 
 
-$$(2*one-1)*one + (2*two-1)*2 + (2*three-1)*three + (2*four-1)*four$$
+$$(2 \cdot one-1) \cdot one + (2 \cdot two-1) \cdot 2 + (2 \cdot three-1) \cdot three + (2 \cdot four-1) \cdot four$$
 
 $$\sum_{i=1}^{n}(2i-1)i$$
 $$2\sum_{i=1}^{n}i^2 -\sum_{i=1}^{n}i$$
@@ -144,7 +145,7 @@ $$ \frac{n(n+1)(4n-1)}{6n^2} $$
 For our initial situation of rolling 1d4 with disadvantage, using the previous equation  with $n=4$ gives $3.125$
 
 
-## 
+# Change Title
 
 Usually, player will roll a dice, add some modifier and compare it to a target value. For example, a player doing an attack roll will roll a d20, add his proficiency bonus, add any other bonuses, and compare it to the target value. Instead of adding any modifier to the dice roll, we can substract them from the target valuer. We will designate that as the Net Target Value (NTV).
 
@@ -288,7 +289,7 @@ We see:
 - Starting at NTV 11, the modifier values are a mirror copy of the values before NTV 11.
 
 
-## Cheat sheet:
+## Cheat sheet
 
 The equivalent modifier for NTV can be condensed to:
 
