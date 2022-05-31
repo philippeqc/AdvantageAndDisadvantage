@@ -1,5 +1,11 @@
 
-# Worst 1 of 2 (Disadvantage)
+# Smallest 1 of 2 (Disadvantage)
+
+What is the result of rolling 2 dice and selecting the worst value?
+
+
+
+Rolling 2d4, selecting the lowest value give:
 
 |   | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
@@ -8,86 +14,32 @@
 | 3 | 1 | 2 | 3 | 3 |
 | 4 | 1 | 2 | 3 | 4 |
 
-Rolling 2d4 with disadvantage give:
+Talling the occurence of each values:
 
-* 7 one's
-* 5 two's
-* 3 three's
-* 1 four's
+* $7$ one's
+* $5$ two's
+* $3$ three's
+* $1$ four's
 
 To get the average of 1d4 with disadvantage, get the total for all the cases, 30 ($ 7 \cdot 1 + 5 \cdot 2 + 3 \cdot 3 + 1 \cdot 4$) and divide it by the number of cases, 16, so $\frac{30}{16}$ to get $1,875$.
 
-
-
-But, we notice that it relates with the max value of the dice, here 4, actually twice that, so 8.
-
-* $((2 \cdot 4) - 1)$ one's
-* $((2 \cdot 4) - 3)$ two's
-* $((2 \cdot 4) - 5)$ three's
-* $((2 \cdot 4) - 7)$ four's
-
-There seems to be a relation between the value of the result and its occurence
-
-* $(2 \cdot 4) - (2 \cdot one - 1)$ one's
-* $(2 \cdot 4) - (2 \cdot two - 1)$ two's
-* $(2 \cdot 4) - (2 \cdot three - 1)$ three's
-* $(2 \cdot 4) - (2 \cdot four - 1)$ four's
-
-or
+Expressing the frequency (number of occurence) of a result (ex: 5) with the size of the dice, here 4, and the value of the result (ex: two) [(steps)](Pick1of2_Steps#Smallest_Relation).
 
 * $(2 \cdot 4 + 1) - (2 \cdot one)$ one's
 * $(2 \cdot 4 + 1) - (2 \cdot two)$ two's
 * $(2 \cdot 4 + 1) - (2 \cdot three)$ three's
 * $(2 \cdot 4 + 1) - (2 \cdot four)$ four's
 
-Let use n for the max value of the dice, here 4, and move the +1 with it as it doesn't depend on the value of the result.
-
-* $(2n + 1) - (2 \cdot one)$ one's
-* $(2n + 1) - (2 \cdot two)$ two's
-* $(2n + 1) - (2 \cdot three)$ three's
-* $(2n + 1) - (2 \cdot four)$ four's
+The relation between the frequency and the value becomes appareant and can be expressed as $((2n+1) - (2i)) i$, where $i$ is the value of the result and $n$ the size of the dice. The sum of all the results is $\sum_{i=1}^{n}(((2n+1) - (2i)) i)$. Dividing it by the number of results, $n^2$, produce the average $\frac{1}{n^2}\sum_{i=1}^{n}(((2n+1) - (2i)) i)$, which can be [simplified](Pick1of2_Steps#Smallest_Simplification) to
 
 
-For each item, the frequency of a result is linked with the result. The number of one's found in the table is dependent on the value one. The number of two's depends on the value two, and so on. So with our 1d4, we have the values 1,2,3 and 4. We will identify this as `i`. And as we want to add it all together, we will use the summation symbolised by $\sum$.
 
-$$ \sum_{i=1}^{n}(((2n+1) -(2i)) i) $$
-
-Applying $i$ to each sub parts we get
-
-$$ \sum_{i=1}^{n}((2n+1)i - 2i^2) $$
-
-Lets break apart the two parts, and move the constant part out of the summation.
-
-$$ (2n+1)\sum_{i=1}^{n}(i) - 2 \sum_{i=1}^{n}(i^2) $$
-
-## Solving
-
-The summation of sequential numbers is $\frac{n(n+1)}{2}$. This will replace $\sum_{i=1}^{n}(i)$. The summation of squares is $\frac{n(n+1)(2n+1)}{6}$, which will replace $\sum_{i=1}^{n}(i^2)$. This leave us with:
-
-$$ (2n+1)\frac{n(n+1)}{2} - 2 \frac{n(n+1)(2n+1)}{6} $$
-
-Lets clean it up
-
-$$ \frac{n(n+1)(2n+1)}{2} - \frac{2n(n+1)(2n+1)}{6} $$
-
-Moving the common part $n(n+1)(2n+1)$, we get:
-
-$$ n(n+1)(2n+1)  (\frac{1}{2} - \frac{2}{6}) $$
-
-Changing $\frac{1}{2} - \frac{2}{6}$ to $\frac{1}{6}$:
-$$ \frac{n(n+1)(2n+1)}{6} $$
-
-is the total for all the cases. For the average, divide by the number of cases.
-
-$$ \frac{n(n+1)(2n+1)}{6n^2} $$
-
-## Result
 
 $$ \frac{n(n+1)(2n+1)}{6n^2} $$
 
 For our initial situation of rolling 1d4 with disadvantage, using the previous equation  with $n=4$ gives $1.875$
 
-# Best 1 of 2 (Advantage)
+# Biggest 1 of 2 (Advantage)
 
 |   | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
@@ -98,47 +50,19 @@ For our initial situation of rolling 1d4 with disadvantage, using the previous e
 
 Rolling 2d4 with sadvantage give:
 
-* 1 one's
-* 3 two's
-* 5 three's
-* 7 four's
+* $1$ one's
+* $3$ two's
+* $5$ three's
+* $7$ four's
 
-$1 \cdot 1 + 3 \cdot 2 + 5 \cdot 3 + 7 \cdot 4 = 50$
+Expressing the frequency of a result (ex: 3) with the value of that result (ex: two)
 
-or
 * $(2 \cdot one) - 1$ one's
 * $(2 \cdot two) - 1$ two's
 * $(2 \cdot three) - 1$ three's
 * $(2 \cdot four) - 1$ four's
 
-
-$$(2 \cdot one-1) \cdot one + (2 \cdot two-1) \cdot 2 + (2 \cdot three-1) \cdot three + (2 \cdot four-1) \cdot four$$
-
-$$\sum_{i=1}^{n}(2i-1)i$$
-$$2\sum_{i=1}^{n}i^2 -\sum_{i=1}^{n}i$$
-
-## Solving
-
-$$2\sum_{i=1}^{n}i^2 -\sum_{i=1}^{n}i$$
-
-becomes
-
-$$ \frac{2n(n+1)(2n+1)}{6} - \frac{n(n+1)}{2} $$
-
-Isolating $\frac{n(n+1)}{2}$
-
-$$ \frac{n(n+1)}{2}( \frac{2(2n+1)}{3} - 1) $$
-$$ \frac{n(n+1)}{2}( \frac{4n+2}{3} - \frac{3}{3}) $$
-$$ \frac{n(n+1)(4n+2-3)}{6} $$
-$$ \frac{n(n+1)(4n-1)}{6} $$
-
-is the total for all the cases. For the average, divide by the number of cases.
-
-$$ \frac{n(n+1)(4n-1)}{6n^2} $$
-
-
-
-## Result
+The relation between the frequency and the value becomes appareant and can be expressed as $(2i-1)i$. The sum of all the results is $\sum_{i=1}^{n}(2i-1)i$. Dividing it by the number of results, $n^2$, produce the average $\frac{1}{n^2}\sum_{i=1}^{n}(2i-1)i$, which can be [simplified](PickBiggest1of2Steps) to
 
 $$ \frac{n(n+1)(4n-1)}{6n^2} $$
 

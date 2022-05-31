@@ -1,6 +1,8 @@
 # Pick best 2 dices out of 3
 
-## Pick best dice out of 2 on 1d4 is
+## 
+
+Pick best dice out of 2 on 1d4 is
 | 1b2d4  | 1  | 2  | 3  | 4  |
 |   ---  |--- |--- |--- |--- |
 | 1      | 1  | 2  | 3  | 4  |
