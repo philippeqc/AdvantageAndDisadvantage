@@ -21,7 +21,7 @@ Nota: Parts of this document use "b" for best and "w" for worst instead of "b" f
 
 # 1 of 2 dices
 
-Click [here](Pick1of2) to consult the method used.
+Click [here](Pick1of2.md) to consult the method used.
 
 
 ## Pick smallest dice out of 2 (Disadvantage)
@@ -32,6 +32,8 @@ $$ \frac{n(n+1)(4n-1)}{6n^2} $$
 
 
 # 2 of 3 dices
+
+Click [here](PickSmallest2of3.md.md) [here](PickBiggest2of3.md.md) to consult the method used.
 
 ## Pick smallest 2 dices out of 3 
 $$ \frac{19n^4+22n^3+5n^2+2n}{24n^3}  $$

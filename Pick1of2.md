@@ -23,14 +23,14 @@ Talling the occurence of each values:
 
 To get the average of 1d4 with disadvantage, get the total for all the cases, 30 ($ 7 \cdot 1 + 5 \cdot 2 + 3 \cdot 3 + 1 \cdot 4$) and divide it by the number of cases, 16, so $\frac{30}{16}$ to get $1,875$.
 
-Expressing the frequency (number of occurence) of a result (ex: 5) with the size of the dice, here 4, and the value of the result (ex: two) [(steps)](Pick1of2_Steps#Smallest_Relation).
+Expressing the frequency (number of occurence) of a result (ex: 5) with the size of the dice, here 4, and the value of the result (ex: two) [(steps)](Pick1of2_Steps#Smallest_Relation.md).
 
 * $(2 \cdot 4 + 1) - (2 \cdot one)$ one's
 * $(2 \cdot 4 + 1) - (2 \cdot two)$ two's
 * $(2 \cdot 4 + 1) - (2 \cdot three)$ three's
 * $(2 \cdot 4 + 1) - (2 \cdot four)$ four's
 
-The relation between the frequency and the value becomes appareant and can be expressed as $((2n+1) - (2i)) i$, where $i$ is the value of the result and $n$ the size of the dice. The sum of all the results is $\sum_{i=1}^{n}(((2n+1) - (2i)) i)$. Dividing it by the number of results, $n^2$, produce the average $\frac{1}{n^2}\sum_{i=1}^{n}(((2n+1) - (2i)) i)$, which can be [simplified](Pick1of2_Steps#Smallest_Simplification) to
+The relation between the frequency and the value becomes appareant and can be expressed as $((2n+1) - (2i)) i$, where $i$ is the value of the result and $n$ the size of the dice. The sum of all the results is $\sum_{i=1}^{n}(((2n+1) - (2i)) i)$. Dividing it by the number of results, $n^2$, produce the average $\frac{1}{n^2}\sum_{i=1}^{n}(((2n+1) - (2i)) i)$, which can be [simplified](Pick1of2_Steps#Smallest_Simplification.md) to
 
 
 
@@ -62,7 +62,7 @@ Expressing the frequency of a result (ex: 3) with the value of that result (ex: 
 * $(2 \cdot three) - 1$ three's
 * $(2 \cdot four) - 1$ four's
 
-The relation between the frequency and the value becomes appareant and can be expressed as $(2i-1)i$. The sum of all the results is $\sum_{i=1}^{n}(2i-1)i$. Dividing it by the number of results, $n^2$, produce the average $\frac{1}{n^2}\sum_{i=1}^{n}(2i-1)i$, which can be [simplified](PickBiggest1of2Steps) to
+The relation between the frequency and the value becomes appareant and can be expressed as $(2i-1)i$. The sum of all the results is $\sum_{i=1}^{n}(2i-1)i$. Dividing it by the number of results, $n^2$, produce the average $\frac{1}{n^2}\sum_{i=1}^{n}(2i-1)i$, which can be [simplified](PickBiggest1of2Steps.md) to
 
 $$ \frac{n(n+1)(4n-1)}{6n^2} $$
 
